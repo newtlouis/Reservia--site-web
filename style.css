@@ -145,6 +145,11 @@ header{
     align-items: center;
 }
 
+.info i {
+    color: #0065FC;
+    margin: 10px;
+}
+
 /* mise en page block horizontal hébergement à marseille et populaire */
 .hebergement{
     display: flex;
@@ -177,28 +182,43 @@ header{
 .Hmars{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 170px;
-    width: 200px;
+    width: 190px;
     background-color: #F2F2F2;
     border-radius: 25px;
     margin: 20px;
     padding: 5px;
 
 }
+/* Dimension images */
+.Hmars img{
+    height: 100px;
+    border-radius: 20px 20px 0 0;
+}
 
+/* Afficher plus */
+.afficher{
+    font-weight: bold;
+}
 
-/* mise en page populaire */
+/* SECTION POPULAIRES */
 
 /* mise en page titre populaire */
 .titre_populaires{
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 .pop_titre{
     margin-left: 20px;
 }
+.titre_populaires i{
+    margin-right: 20px;
+}
+
+/* Strucure */
 
 .populaires{
     background-color: #e6e6e6  ;
@@ -220,6 +240,13 @@ header{
     border-radius: 25px;
     margin: 20px;
     padding: 5px;
+    }
+
+/* Dimension images */
+.Hpop img{
+    width: 120px;
+    border-radius: 20px 0 0 20px;
+    margin-right: 10px;
 }
 
 .detail_HM{
@@ -237,11 +264,13 @@ header{
     margin: 15px 0 15px 0;
 }
 
+/* structure de la gallerie */
+
 .A_gallery{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-gap: 25px;
-    grid-template-rows: repeat(2,100px);
+    column-gap: 25px;
+    grid-template-rows: repeat(2,195px);
      grid-template-areas: 
     "A1 A2 A4 A5"
     "A1 A3 A4 A6"
@@ -250,6 +279,9 @@ header{
 
 .A1{
     grid-area: A1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: white;
     border-radius: 20px;
     box-shadow:0 10px 10px  rgb(230, 230, 230);
@@ -257,20 +289,33 @@ header{
 
 .A2{
     grid-area: A2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: white;
     border-radius: 20px;
     box-shadow:0 10px 10px  rgb(230, 230, 230);
+    height: 200px;
+    
 }
 
 .A3{
     grid-area: A3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: white;
     border-radius: 20px;
     box-shadow:0 10px 10px  rgb(230, 230, 230);
+    height: 166px;
+    margin-top: 30px;
 }
 
 .A4{
     grid-area: A4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: white;
     border-radius: 20px;
     box-shadow:0 10px 10px  rgb(230, 230, 230);
@@ -278,25 +323,87 @@ header{
 
 .A5{
     grid-area: A5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: white;
     border-radius: 20px;
     box-shadow:0 10px 10px  rgb(230, 230, 230);
+    height: 172px;
 }
 
 .A6{
     grid-area: A6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: white;
     border-radius: 20px;
     box-shadow:0 10px 10px  rgb(230, 230, 230);
+    height: 195px;
 }
 
 .A_gallery p{
     margin: 20px;
 }
 
+/* Dimension des images */
+/* .A_gallery img{
+    width: 273px;
+    border-radius: 20px 20px 0 0;
+} */
+.A_im1{
+    width: auto;
+    height:400px;
+    background-image: url(/images/activites/4_small/1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+}
+.A_im2{
+    width: auto;
+    height:150px;
+    background-image: url(/images/activites/4_small/2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+}
+.A_im3{
+    width: auto;
+    height:150px;
+    background-image: url(/images/activites/4_small/3.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+}
+.A_im4{
+    width: auto;
+    height:400px;
+    background-image: url(/images/activites/4_small/4.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+}
+.A_im5{
+    width: auto;
+    height:150px;
+    background-image: url(/images/activites/4_small/5.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+}
+.A_im6{
+    width: auto;
+    height:150px;
+    background-image: url(/images/activites/4_small/6.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+}
 
 
-/* Footer */
+
+/* FOOTER */
 footer {
     display: flex;
     background-color: #e6e6e6;
