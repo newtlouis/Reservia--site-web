@@ -1,5 +1,76 @@
 *{ 
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing:0;
+    background-color:#F2F2F2;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+body{
+    margin: 0px 50px 0px 50px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    
+
+}
+
+.nav1{
+    margin: 33px;
+    color: #0065FC;
+
+}
+
+.nav2{
+    margin: 33px;
+
+}
+
+.nav3{
+    margin: 33px;
+    color: #0065FC;
+    font-weight: bold;
+
+}
+
+.titre{
+    margin: 10px 0px 10px 0px;
+    
+}
+
+.bandeau_filtres{
+    display: flex;
+    margin: 11px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.economique{
+    display: flex;
+    margin: 11px;
+}
+
+.familial{
+    display: flex;
+    margin: 11px;
+}
+
+.romantique{
+    display: flex;
+    margin: 11px;
+}
+
+.animaux{
+    display: flex;
+    margin: 11px;
 }
