@@ -431,80 +431,51 @@ a{
 /* avec flexbox */
 
 .A_gallery{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    column-gap: 25px;
-    grid-template-rows: repeat(2,195px);
-     grid-template-areas: 
-    "A1 A2 A4 A5"
-    "A1 A3 A4 A6"
-    ;
+    display: flex;
+    justify-content: space-between;
 }
 
-.A1{
-    grid-area: A1;
+
+/* Mise en page des affiches des activités */
+.A1, .A4{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     background-color: white;
     border-radius: 20px;
-    box-shadow:0 10px 10px  rgb(230, 230, 230);
-}
-
-.A2{
-    grid-area: A2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow:0 10px 10px  rgb(230, 230, 230);
-    height: 200px;
+    box-shadow:0 10px 10px 3px rgb(230, 230, 230);
+    width: 270px;
+    height: 400px;
     
 }
 
-.A3{
-    grid-area: A3;
+.A2, .A6{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     background-color: white;
     border-radius: 20px;
-    box-shadow:0 10px 10px  rgb(230, 230, 230);
-    height: 166px;
-    margin-top: 30px;
+    box-shadow:0 10px 10px 3px rgb(230, 230, 230);
+    width: 270px;
+    height: 200px;
+  
 }
 
-.A4{
-    grid-area: A4;
-    display: flex;
+.A3, .A5{
+      display: flex;
     flex-direction: column;
     justify-content: space-around;
     background-color: white;
     border-radius: 20px;
-    box-shadow:0 10px 10px  rgb(230, 230, 230);
+    box-shadow:0 10px 10px 3px rgb(230, 230, 230);
+    width: 270px;
+    height: 170px;
+   
 }
 
-.A5{
-    grid-area: A5;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow:0 10px 10px  rgb(230, 230, 230);
-    height: 172px;
-}
-
-.A6{
-    grid-area: A6;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow:0 10px 10px  rgb(230, 230, 230);
-    height: 195px;
+/* Separation des 2 affiches dans 1 colonnes, on peut aussi le faire avec flex/column/spacebetween sur la class A_colonne_duo*/
+.A2, .A5{
+    margin-bottom: 32px ;
 }
 
 .A_gallery p{
