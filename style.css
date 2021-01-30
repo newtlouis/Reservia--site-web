@@ -428,6 +428,7 @@ a{
 }
 
 /* structure de la gallerie */
+/* avec flexbox */
 
 .A_gallery{
     display: grid;
