@@ -2,13 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing:0;
-    
     font-family: 'Raleway', sans-serif;
     color: black;
 }
 
 .container{
-    padding: 0px 50px 0px 50px;
+    padding: 0px 40px 0px 40px;
     background-color:#F2F2F2;
 }
 
@@ -17,19 +16,18 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-}
+    }
 
 .menu {
     list-style: none;
     display: flex;
-    
-
-}
+    }
 
 .nav1{
-    margin: 33px;
+    padding: 33px 20px 33px 20px;
+    
     color: #0065FC;
+    border-top:#0065FC solid ;
 
 }
 
@@ -42,29 +40,53 @@ header{
     margin: 33px;
     color: #0065FC;
     font-weight: bold;
-
 }
 
 /* TITRE */
 
 .titre{
     margin: 10px 0px 10px 0px;
-    
-}
+    }
 
 .titre h1{
     font-size: 20px;
     font-weight:bolder;
     margin-bottom: 5px;
 }
-/* les icones du filtre */
-.bandeau_filtres i {
-    color: #0065FC;
-    background-color: rgb(192, 211, 247);
-    padding: 15px;
-    border-radius: 50%;
-    z-index: 1;
 
+/* BOUTON RECHERCHE */
+.recherche{
+    display: flex;
+  
+}
+
+.map{
+    
+    background-color: rgb(230, 230, 230);
+    padding: 13px 20px 13px 20px;
+    border-radius: 15px 0 0 15px ;
+}
+
+.saisie{
+    border-style: none;
+    padding-left: 20px;
+    padding-right: 30px;
+    font-weight: bolder;
+    color: black;
+    outline: none;
+    
+}
+
+.bouton{
+    align-self: center;
+    padding: 13px 20px 13px 20px;
+    text-decoration: none;
+    background-color: #0065FC;
+    color: white;
+    font-weight: bolder;
+    border-radius: 0 15px  15px 0;
+    
+    
 }
 
 /* LES FILTRES */
@@ -76,21 +98,37 @@ header{
     font-weight: bold;
 }
 
+/* economique */
 .economique{
     display: flex;
     margin: 11px;
     border-style:solid;
     border-width:2px;
     border-radius: 60px;
-    border-color: #c4c2c2;
+    border-color: #d6d6d6;
     padding-right: 10px;
-
 }
+.icone_economique{
+    height: 35px;
+    width: 35px;
+    background-color:rgb(192, 211, 247);
+    clip-path:circle(50% at 50% 50%);
+    position: relative;
+}
+
+.icone_economique i {
+    color: #0065FC;
+   position: absolute;
+   top: 25%;
+   right: 25%;
+  }
 .txt_economique{
     margin-left: 10px;
     align-self: center;
 
 }
+
+/* familial */
 
 .familial{
     display: flex;
@@ -98,46 +136,93 @@ header{
     border-style:solid;
     border-width:2px;
     border-radius: 60px;
-    border-color: #c4c2c2;
+    border-color: #d6d6d6;
     padding-right: 10px;
 }
+
+.icone_familial{
+    height: 35px;
+    width: 35px;
+    background-color:rgb(192, 211, 247);
+    clip-path:circle(50% at 50% 50%);
+    position: relative;
+}
+
+.icone_familial i {
+    color: #0065FC;
+   position: absolute;
+   top: 25%;
+   right: 37%;
+  }
 
 .txt_familial{
     margin-left: 10px;
     align-self: center;
 }
 
+/* romantique */
 .romantique{
     display: flex;
     margin: 11px;
     border-style:solid;
     border-width:2px;
     border-radius: 60px;
-    border-color: #c4c2c2;
+    border-color: #d6d6d6;
     padding-right: 10px;
 }
+.icone_romantique{
+    height: 35px;
+    width: 35px;
+    background-color:rgb(192, 211, 247);
+    clip-path:circle(50% at 50% 50%);
+    position: relative;
+}
+
+.icone_romantique i {
+    color: #0065FC;
+   position: absolute;
+   top: 30%;
+   right: 30%;
+  }
 
 .txt_romantique{
     margin-left: 10px;
     align-self: center;
 }
 
+/* animaux */
 .animaux{
     display: flex;
     margin: 11px;
     border-style:solid;
     border-width:2px;
     border-radius: 60px;
-    border-color: #c4c2c2;
+    border-color: #d6d6d6;
     padding-right: 10px;
 }
+.icone_animaux{
+    height: 35px;
+    width: 35px;
+    background-color:rgb(192, 211, 247);
+    clip-path:circle(50% at 50% 50%);
+    position: relative;
+
+}
+.icone_animaux i {
+    color: #0065FC;
+   position: absolute;
+   top: 25%;
+   right: 30%;
+  }
 
 .txt_animaux{
     margin-left: 10px;
     align-self: center;
 }
 
-/* Info */
+
+
+/* INFO */
 
 .info{
     display: flex;
@@ -150,13 +235,13 @@ header{
     margin: 10px;
 }
 
-/* mise en page block horizontal hébergement à marseille et populaire */
+/* BLOCK HORIZONTAL HEBERGEMENT/POPULAIRE*/
 .hebergement{
     display: flex;
     justify-content:space-between;
 }
 
-/* mise en page hébergement à marseille */
+/* HEBERGEMENT A MARSEILLE */
 
 
 
@@ -165,13 +250,14 @@ header{
     flex-direction: column;
     justify-content: space-around;
     background-color: #e6e6e6  ;
-    border-radius: 30px;
+    border-radius: 20px;
     padding: 20px 0px 20px 15px;
     margin-right: 20px;
 }
 
 .HM_titre{
     margin-left: 20px;
+    margin-top: 10px;
 }
 .HM_gallery{
     display: flex;
@@ -184,17 +270,63 @@ header{
     flex-direction: column;
     justify-content: space-between;
     height: 170px;
-    width: 190px;
+    width: 210px;
     background-color: #F2F2F2;
-    border-radius: 25px;
-    margin: 20px;
-    padding: 5px;
+    border-radius: 20px;
+    margin: 12px;
+    padding: 4px;
+    box-shadow: 0px 10px 10px rgb(219, 219, 219);
 
 }
 /* Dimension images */
-.Hmars img{
-    height: 100px;
-    border-radius: 20px 20px 0 0;
+.H_img1{
+    height: 105px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/images/hebergements/4_small/1.jpg);
+    border-radius: 15px 15px 0 0;
+}
+
+.H_img2{
+    height: 105px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/images/hebergements/4_small/2.jpg);
+    border-radius: 15px 15px 0 0;
+}
+.H_img3{
+    height: 105px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/images/hebergements/4_small/3.jpg);
+    border-radius: 15px 15px 0 0;
+}
+.H_img4{
+    height: 105px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/images/hebergements/4_small/4.jpg);
+    border-radius: 15px 15px 0 0;
+}
+.H_img5{
+    height: 105px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/images/hebergements/4_small/5.jpg);
+    border-radius: 15px 15px 0 0;
+}
+.H_img6{
+    height: 105px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/images/hebergements/4_small/6.jpg);
+    border-radius: 15px 15px 0 0;
 }
 
 /* Afficher plus */
@@ -209,6 +341,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
 }
 
 .pop_titre{
@@ -222,7 +355,7 @@ header{
 
 .populaires{
     background-color: #e6e6e6  ;
-    border-radius: 30px;
+    border-radius: 20px;
     padding: 20px 15px 20px 15px;
     margin-left: 20px;
 }
@@ -234,25 +367,49 @@ header{
 /* mise en page des annonces des Populaires */
 .Hpop{
     display: flex;
-    height: 140px;
-    width: 280px;
+    height: 115px;
+    width: 293px;
     background-color: #F2F2F2;
-    border-radius: 25px;
+    border-radius: 15px;
     margin: 20px;
-    padding: 5px;
+    padding: 4px;
+    box-shadow: 0px 10px 10px rgb(219, 219, 219);
     }
 
 /* Dimension images */
-.Hpop img{
-    width: 120px;
-    border-radius: 20px 0 0 20px;
-    margin-right: 10px;
+
+.pop_img1{
+    width: 135px;
+    height:auto;
+    background-image: url(/images/hebergements/4_small/7.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 0 0 10px;
 }
+
+.pop_img2{
+    width: 135px;
+    height:auto;
+    background-image: url(/images/hebergements/4_small/8.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 0 0 10px;
+}
+.pop_img3{
+    width: 135px;
+    height:auto;
+    background-image: url(/images/hebergements/4_small/9.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 0 0 10px;
+}
+
 
 .detail_HM{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-left: 10px;
 }
 
 /* ACTIVITE A MARSEILLE */
