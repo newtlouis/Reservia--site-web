@@ -3,9 +3,285 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2bb2f2a2a8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <title>Reservia</title>
 </head>
+
 <body>
-    
+    <!-- Création de container pour séparer le footer avec ses bordures étendues -->
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <img src="images/logo/Reservia_resize.png" alt="logo" wdth>
+            
+                
+            
+            <nav>
+                <ul class="menu">
+                    <a href="#H_ancre"><li class="nav1">Hébergements</li></a>
+                    <a href="#A_ancre"><li class="nav2">Activités</li></a>
+                    <a href="#"><li class="nav3"> S'inscrire </li></a>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- TITRE -->
+        <div class="titre">
+            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+        </div>
+
+  
+        <!-- BOUTON RECHERCHE -->
+
+        <div class="recherche">
+            <div class="map"><i class="fas fa-map-marker-alt"></i></div>
+            <input class="saisie" type="text" name="" placeholder="Marseille, France">
+            <a class="bouton" href="#">Rechercher</a>
+        </div>
+
+        <!-- FILTRES -->
+        <div class="bandeau_filtres">
+            <div class="txt_filtre">
+                Filtres
+            </div>
+            <div class="filtre">
+                <div class="icone_economique"><i class="fas fa-money-bill-wave"></i></div>
+                <div class="txt_economique">Economique</div>
+            </div>
+            <div class="filtre">
+                <div class="icone_familial"><i class="fas fa-child"></i></div>
+                <div class="txt_familial">Familial</div>
+            </div>
+            <div class="filtre">
+                <div class="icone_romantique"><i class="fas fa-heart"></i></div>
+                <div class="txt_romantique">Romantique</div>
+            </div>
+            <div class="filtre">
+                <div class="icone_animaux"><i class="fas fa-dog"></i></div>
+                <div class="txt_animaux">Animaux autorisés</div>
+            </div>     
+        </div>
+
+    <!-- INFO -->
+        <div class="info">
+            <i class="fas fa-info-circle"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+
+        
+        <section class="hebergement">
+            <div id="H_ancre"></div>
+
+            <!-- SECTION HERBERGEMENT MARSEILLE -->
+            <section class="H_marseille">
+                <h1 class="HM_titre">Hébergement à Marseille</h1>
+                
+                <div class="HM_gallery">
+
+                    <a href="#" class="Hmars">   
+                        <div class="H_img1"></div>
+                        
+                        <p class="H_nom"> <strong>Auberge la Cannebière</strong> </p>
+                        <p class="H_prix">Nuit à partir de <strong>25€</strong></p>
+                        <div class="etoiles">
+                                <p class="etoile_pleine">★★★★</p>
+                                <p class="etoile_vide">★</p>
+                            </div>
+                        
+                    </a>
+
+                    <a href="#" class="Hmars">
+                        <div class="H_img2"></div>
+                        <p class="H_nom"> <strong>Auberge la Cannebière</strong> </p>
+                        <p class="H_prix">Nuit à partir de <strong>25€</strong></p>
+                        <div class="etoiles">
+                                <p class="etoile_pleine">★★★★★</p>
+                                <p class="etoile_vide"></p>
+                            </div>
+                    
+                    </a>
+
+                    <a href="#" class="Hmars">
+                        <div class="H_img3"></div>
+                        <p class="H_nom"> <strong>Auberge la Cannebière</strong> </p>
+                        <p class="H_prix">Nuit à partir de <strong>25€</strong></p>
+                        <div class="etoiles">
+                                <p class="etoile_pleine">★★★★</p>
+                                <p class="etoile_vide">★</p>
+                            </div>
+                    
+                    </a>
+
+                    <a href="#" class="Hmars">
+                        <div class="H_img4"></div>
+                            <p class="H_nom"> <strong>Auberge la Cannebière</strong> </p>
+                            <p class="H_prix">Nuit à partir de <strong>25€</strong></p>
+                            <div class="etoiles">
+                                <p class="etoile_pleine">★★★</p>
+                                <p class="etoile_vide">★★</p>
+                            </div>
+        
+                    </a>
+
+                    <a href="#" class="Hmars">
+                        <div class="H_img5"></div>
+                            <p class="H_nom"> <strong>Auberge la Cannebière</strong> </p>
+                            <p class="H_prix">Nuit à partir de <strong>25€</strong></p>
+                            <div class="etoiles">
+                                <p class="etoile_pleine">★★★★</p>
+                                <p class="etoile_vide">★</p>
+                            </div>
+     
+                    </a>
+
+                    <a href="#" class="Hmars">
+                        <div class="H_img6"></div>
+                        <p class="H_nom"> <strong>Auberge la Cannebière</strong> </p>
+                        <p class="H_prix">Nuit à partir de <strong>25€</strong></p>
+                        <div class="etoiles">
+                                <p class="etoile_pleine">★★★★★</p>
+                                <p class="etoile_vide"></p>
+                            </div>
+                    
+                    </a>
+            </div>
+                <p class="afficher">Afficher plus</p>
+            </section>
+
+            <!-- SECTION POPULAIRE -->
+
+            <section class="populaires">
+                <div class="titre_populaires">
+                    <h1 class="pop_titre">Les plus populaires</h1>
+                    <i class="fas fa-rocket"></i>                </div>
+                
+                <div class="pop_gallery">
+                    <a href="#"class="Hpop">
+                        <div class="pop_img1"></div>
+                        <div class="detail_HM">
+                            <p><strong>Auberge la Cannebière</strong></p>
+                            <p>Nuit à partir de <strong>25€</strong></p>
+                            <div class="etoiles">
+                                <p class="etoile_pleine">★★★★★</p>
+                                <p class="etoile_vide"></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="Hpop">
+                        <div class="pop_img2"></div>
+                        <div class="detail_HM">
+                            <p><strong>Auberge la Cannebière</strong></p>
+                            <p>Nuit à partir de <strong>25€</strong></p>
+                            <div class="etoiles">
+                                <p class="etoile_pleine">★★★★</p>
+                                <p class="etoile_vide">★</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="Hpop">
+                        <div class="pop_img3"></div>
+                        <div class="detail_HM">
+                            <p><strong>Auberge la Cannebière</strong></p>
+                            <p>Nuit à partir de <strong>25€</strong></p>
+                            <div class="etoiles">
+                                <p class="etoile_pleine">★★★★</p>
+                                <p class="etoile_vide">★</p>
+                            </div>
+                        </div>
+                    </a>
+                
+
+                </div>
+            </section>
+        </section>
+
+        <!-- ACTIVITE A MARSEILLE -->
+
+    <!-- Avec flexbox -->
+
+        
+
+        <section class="A_marseille">
+            <div id="A_ancre"></div>
+            <h1 class="A_titre">Activités à Marseille</h1>
+            
+            <div class="A_gallery">
+                
+                <a href="#"><div class="A1">
+                    <div class="A_im1"></div>
+                    <p><strong>Vieux Port</strong> </p>
+                </div></a>
+
+                <div class="A_colonne_duo">
+                    <a href="#"><div class="A2">
+                        <div class="A_im2"></div>
+                        <p><strong>Fort de Pomègues</strong> </p>
+                    </div></a>
+                
+
+
+                    <a href="#"><div class="A3">
+                        <div class="A_im3"></div>
+                        <p><strong>Iles de frioul</strong> </p>
+                    </div></a>
+                </div>
+
+
+                <a href="#"><div class="A4">
+                    <div class="A_im4"></div>
+                    <p><strong>Parc National des Calanques</strong> </p>
+                </div></a>
+
+                <div class="A_colonne_duo">
+                    <a href="#"><div class="A5">
+                        <div class="A_im5"></div>
+                        <p><strong>Notre-Dame-de-la-Garde</strong> </p>
+                    </div></a>
+
+
+                    <a href="#"><div class="A6">
+                        <div class="A_im6"></div>
+                        <p> <strong>Parc Longchamp</strong> </p>
+                    </div></a>
+                </div>      
+            </div>
+        </section>
+
+
+    </div>
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="a_propos">
+            <h2>A propos</h2>
+            <ul class="liste_propos">
+                <li>Fonctionnement du site</li>
+                <li>Conditions générales de vente</li>
+                <li>Données et confidentialité</li>
+            </ul>
+        </div>
+
+        
+        <div class="nos_hebergements">
+            <h2>Nos hébergements</h2>
+            <ul class="liste_hebergement">
+                <li>Charte qualité</li>
+                <li>Soumettre votre hôtel</li>
+            </ul>
+        </div>
+
+        
+        <div class="assistance">
+            <h2>Assistance</h2>
+            <ul class="liste_assistance">
+                <li>Centre d'aide</li>
+                <li>Nous contacter</li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
