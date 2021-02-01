@@ -21,30 +21,38 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+  
     }
 
-.menu {
+/* .menu {
     list-style: none;
     display: flex;
-    }
-
-.nav1{
-    padding: 33px 20px 33px 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    } */
     
+    .logoboite{
+        flex-basis: 60%;   
+    }
+    
+.nav_hebergement{
+    padding: 33px 20px 33px 20px;    
     color: #0065FC;
     border-top:#0065FC solid ;
-
+    
 }
 
-.nav2{
+
+.nav_activites{
     margin: 33px;
-
+   
 }
 
-.nav3{
+.nav_sinscrire{
     margin: 33px;
     color: #0065FC;
     font-weight: bold;
+    
 }
 
 /* TITRE */
@@ -62,11 +70,9 @@ header{
 /* BOUTON RECHERCHE */
 .recherche{
     display: flex;
-  
-}
+  }
 
 .map{
-    
     background-color: rgb(230, 230, 230);
     padding: 13px 20px 13px 20px;
     border-radius: 15px 0 0 15px ;
@@ -87,17 +93,26 @@ header{
     padding: 13px 20px 13px 20px;
     text-decoration: none;
     background-color: #0065FC;
-    color: white;
-    font-weight: bolder;
     border-radius: 0 15px  15px 0;
-    
-    
+       
 }
+
+.bouton p{
+    color:white;
+    font-weight: bolder;
+}
+
+.bouton i{
+    display: none;
+}
+
+
 
 /* LES FILTRES */
 
 .bandeau_filtres{
     display: flex;
+    flex-wrap: wrap;
     margin: 11px;
     align-items: center;
     font-weight: bold;
@@ -538,6 +553,7 @@ a{
 /* FOOTER */
 footer {
     display: flex;
+    flex-wrap: wrap;
     background-color: #e6e6e6;
     font-size: small;
 }
@@ -576,3 +592,171 @@ footer li {
 .liste_assistance{
     margin-top: 15px;
 }
+
+
+
+/* VERSION MOBILE */
+
+@media all and (max-width: 500px){
+
+   
+
+    /* MARGES */
+    .container{
+        padding: 0;
+    }
+
+    /* HEADER */
+
+    header{
+    
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logoboite{
+        padding-left: 5%;   
+    }
+    
+    .nav_hebergement{
+        order: 1;
+        margin: 0;
+        width: 50%;
+        text-align: center;
+        padding:0 0 10px 0;
+        border-bottom:#0065FC solid ;
+        border-top:none ;
+    }
+
+    .nav_activites{
+        order: 2;
+        margin: 0;
+        width: 50%;
+        padding:0 0 10px 0;
+        border-bottom:#d4d4d4 solid;
+        text-align: center;
+    }
+
+    .nav_sinscrire{
+        order: 0;}
+
+
+    /* TITRE */
+    .titre{
+        margin: 7%;
+    }
+
+    /* BOUTON RECHERCHE */
+
+    .recherche{
+        margin-left: 5%;
+        padding: 0;
+        align-self: center;
+    }
+
+    .bouton{
+        padding: 13px ;
+        border-radius: 15px;
+        position: relative;
+        left: -10px;           
+    }
+
+    .bouton p{
+        display: none;
+    }
+    
+    .bouton i{
+        display:flex;
+        color: white;
+    }
+
+    /* BANDEAU FILTRE */
+    .txt_filtre{
+        margin-top: 5%;
+        margin-left: 5%;
+        width: 100%;
+    }
+    .txt_filtre,.txt_romantique,.txt_familial,.txt_economique,.txt_animaux{
+        font-size:85%;
+    }
+
+    .filtre{
+        margin: 1%;
+    }
+
+    
+/* BLOC CENTRAL */
+
+    .hebergement{
+        flex-direction: column;
+        
+    }
+
+    .H_marseille{
+        width: 100%;
+        order: 1;
+        background-color: #F2F2F2;
+       
+    }
+
+    .HM_titre{
+        margin-top: 30px;
+    }
+    .Hmars{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 170px;
+        width: 80%;
+        background-color: #F2F2F2;
+        border-radius: 20px;
+        margin: 5%;
+        padding: 0;
+    }
+
+    .afficher{
+        margin: 5%;
+    }
+        
+    .populaires{
+        border-radius: 0;
+    }
+
+/* ACTIVITES */
+
+.A_titre{
+    margin: 5%;
+}
+.A_gallery{
+    flex-direction: column;
+}
+
+
+
+.A1,.A2,.A3,.A4,.A5,.A6{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow:0 10px 10px 3px rgb(230, 230, 230);
+    height: 170px;
+    width: 80%;
+    margin: 5%;
+        padding: 0;
+
+}
+
+/* FOOTER */
+footer {
+    flex-direction: column;
+}
+
+.a_propos, .nos_hebergements,.assistance{
+    margin: 5%;
+}
+
+
+}
+
+
