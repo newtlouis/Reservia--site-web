@@ -238,6 +238,7 @@ header{
 .hebergement{
     display: flex;
     justify-content:space-between;
+    width: 100%;
 }
 
 
@@ -251,6 +252,7 @@ header{
     border-radius: 20px;
     padding: 20px 0px 20px 15px;
     margin-right: 20px;
+    
 }
 
 .HM_titre{
@@ -375,9 +377,10 @@ a{
 /* Strucure */
 
 .populaires{
+    width: 60%;
     background-color: #e6e6e6  ;
     border-radius: 20px;
-    padding: 20px 15px 20px 15px;
+    padding: 20px 15px 20px 0;
     margin-left: 20px;
 }
 .pop_gallery{
@@ -389,7 +392,7 @@ a{
 .Hpop{
     display: flex;
     height: 115px;
-    width: 293px;
+    width: 85%;
     background-color: #F2F2F2;
     border-radius: 15px;
     margin: 20px;
@@ -452,6 +455,11 @@ a{
 
 
 /* Mise en page des affiches des activités */
+
+.A_colonne_solo,.A_colonne_duo{
+    width: 22%;    
+}
+
 .A1, .A4{
     display: flex;
     flex-direction: column;
@@ -459,7 +467,6 @@ a{
     background-color: white;
     border-radius: 20px;
     box-shadow:0 10px 10px 3px rgb(230, 230, 230);
-    width: 270px;
     height: 400px;
     
 }
@@ -471,22 +478,20 @@ a{
     background-color: white;
     border-radius: 20px;
     box-shadow:0 10px 10px 3px rgb(230, 230, 230);
-    width: 270px;
     height: 200px;
   
 }
 
 .A3, .A5{
-      display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     background-color: white;
     border-radius: 20px;
     box-shadow:0 10px 10px 3px rgb(230, 230, 230);
-    width: 270px;
     height: 170px;
-   
-}
+   }
+
 
 /* Separation des 2 affiches dans 1 colonnes, on peut aussi le faire avec flex/column/spacebetween sur la class A_colonne_duo*/
 .A2, .A5{
@@ -597,7 +602,7 @@ footer li {
 
 /* VERSION MOBILE */
 
-@media all and (max-width: 500px){
+@media all and (max-width: 650px){
 
    
 
@@ -717,10 +722,20 @@ footer li {
     .afficher{
         margin: 5%;
     }
-        
+    
+/* POPULAIRES */
     .populaires{
+        width: 100%;
+        margin: 0;
+        padding: 0;
         border-radius: 0;
     }
+
+    /* Dimension images */
+
+.pop_img1,.pop_img2,.pop_img3{
+    width:40%;
+}
 
 /* ACTIVITES */
 
@@ -731,19 +746,15 @@ footer li {
     flex-direction: column;
 }
 
-
+.A_colonne_solo,.A_colonne_duo{
+    width: 100%; }
 
 .A1,.A2,.A3,.A4,.A5,.A6{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow:0 10px 10px 3px rgb(230, 230, 230);
     height: 170px;
-    width: 80%;
     margin: 5%;
-        padding: 0;
+    padding: 0;
 
 }
 
