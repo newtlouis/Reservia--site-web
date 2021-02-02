@@ -1,4 +1,4 @@
-/* Configuration de bases */
+/* CONFIGURATION INITIAL */
 *{ 
     margin: 0;
     padding: 0;
@@ -10,9 +10,11 @@
 p{
     font-size: 13px;
 }
-
+h2{
+    font-size: 14px;
+}
 .container{
-    padding: 0px 40px 40px 40px;
+    padding: 0px 3% 3% 3%;
     background-color:#F2F2F2;
 }
 
@@ -70,12 +72,18 @@ header{
 /* BOUTON RECHERCHE */
 .recherche{
     display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px ;
+    margin-top: 25px;
+    width: 350px;
   }
 
 .map{
     background-color: rgb(230, 230, 230);
     padding: 13px 20px 13px 20px;
     border-radius: 15px 0 0 15px ;
+    
 }
 
 .saisie{
@@ -85,6 +93,7 @@ header{
     font-weight: bolder;
     color: black;
     outline: none;
+
     
 }
 
@@ -248,10 +257,10 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #e6e6e6  ;
+    background-color: #e6e6e6;
     border-radius: 20px;
     padding: 20px 0px 20px 15px;
-    margin-right: 20px;
+    margin-right: 2%;
     
 }
 
@@ -359,6 +368,15 @@ a{
 
 /* SECTION POPULAIRES */
 
+/* Strucure */
+.populaires{
+    /* width: 60%; */
+    background-color: #e6e6e6  ;
+    border-radius: 20px;
+    padding: 20px 15px 20px 0;
+    margin-left: 2%;
+}
+
 /* mise en page titre populaire */
 .titre_populaires{
     display: flex;
@@ -368,31 +386,24 @@ a{
 }
 
 .pop_titre{
-    margin-left: 20px;
+    margin-left: 30px;
 }
 .titre_populaires i{
     margin-right: 20px;
 }
 
-/* Strucure */
 
-.populaires{
-    width: 60%;
-    background-color: #e6e6e6  ;
-    border-radius: 20px;
-    padding: 20px 15px 20px 0;
-    margin-left: 20px;
-}
 .pop_gallery{
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
 }
 
 /* mise en page des annonces des Populaires */
 .Hpop{
     display: flex;
     height: 115px;
-    width: 85%;
+    width: 300px;
     background-color: #F2F2F2;
     border-radius: 15px;
     margin: 20px;
@@ -436,6 +447,9 @@ a{
     padding-left: 10px;
 }
 
+
+
+
 /* ACTIVITE A MARSEILLE */
 .A_marseille{
     margin: 40px 0px 40px 0px;
@@ -457,7 +471,7 @@ a{
 /* Mise en page des affiches des activités */
 
 .A_colonne_solo,.A_colonne_duo{
-    width: 22%;    
+    width: 23%;    
 }
 
 .A1, .A4{
@@ -571,7 +585,7 @@ footer ul{
     list-style: none;
 }
 footer li {
-    margin: 10px;
+    margin-top: 10px;
 }
 
 .a_propos{
@@ -600,15 +614,38 @@ footer li {
 
 
 
+
+
 /* VERSION MOBILE */
 
 @media all and (max-width: 650px){
 
    
+    /*  police*/
+    .titre h1{
+        font-size: 17px;
+    }
+
+    header a {
+        font-size: 13px;
+    }
+
+    h1{
+        font-size: 16px;
+    }
+
+    h2{
+        font-size: 13px;
+    }
+    p{
+        font-size: 12px;
+    }
+
 
     /* MARGES */
     .container{
-        padding: 0;
+        padding: 0 0 30px 0;
+        
     }
 
     /* HEADER */
@@ -616,11 +653,26 @@ footer li {
     header{
     
         flex-wrap: wrap;
-        justify-content: center;
+        
     }
 
     .logoboite{
-        padding-left: 5%;   
+        padding: 0;
+        margin: 5% 0 5% 7%;
+        width: 43%;  
+        flex-basis:initial;
+    }
+
+    .logo{
+        width: 75px;
+    }
+
+    .nav_sinscrire{
+        order: 0;
+        padding: 0;
+        margin: 5% 7% 5% 0;
+        width: 43%;
+        text-align:right;
     }
     
     .nav_hebergement{
@@ -642,8 +694,7 @@ footer li {
         text-align: center;
     }
 
-    .nav_sinscrire{
-        order: 0;}
+ 
 
 
     /* TITRE */
@@ -654,16 +705,24 @@ footer li {
     /* BOUTON RECHERCHE */
 
     .recherche{
-        margin-left: 5%;
+        margin: 0 auto 0 auto;
         padding: 0;
-        align-self: center;
+      
+        width: 80%;
+        
+    
+    }
+
+    .saisie{
+        width: 50%;
+        margin: 0 0 0 2%;
+        padding: 0;
     }
 
     .bouton{
-        padding: 13px ;
+        padding-left: 20px ;
         border-radius: 15px;
-        position: relative;
-        left: -10px;           
+                  
     }
 
     .bouton p{
@@ -677,8 +736,8 @@ footer li {
 
     /* BANDEAU FILTRE */
     .txt_filtre{
-        margin-top: 5%;
-        margin-left: 5%;
+        margin: 5% 0 3% 5%;
+        
         width: 100%;
     }
     .txt_filtre,.txt_romantique,.txt_familial,.txt_economique,.txt_animaux{
@@ -705,7 +764,7 @@ footer li {
     }
 
     .HM_titre{
-        margin-top: 30px;
+        margin: 15px 0 10px 10px;
     }
     .Hmars{
         display: flex;
@@ -731,6 +790,15 @@ footer li {
         border-radius: 0;
     }
 
+    .populaires i{
+        margin-right: 7%;
+    }
+
+    /* Dimension annonces */
+    .Hpop{
+        width:85%   ;
+    }
+
     /* Dimension images */
 
 .pop_img1,.pop_img2,.pop_img3{
@@ -746,16 +814,21 @@ footer li {
     flex-direction: column;
 }
 
+/* chaque colonne prend toute la largeur de l'écran */
 .A_colonne_solo,.A_colonne_duo{
     width: 100%; }
 
 .A1,.A2,.A3,.A4,.A5,.A6{
-    display: flex;
-    flex-direction: column;
     height: 170px;
     margin: 5%;
     padding: 0;
 
+}
+
+/* marge dans les colonne_duo */
+
+.A2, .A5{
+    margin-bottom: 50px ;
 }
 
 /* FOOTER */
