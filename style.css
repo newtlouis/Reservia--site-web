@@ -789,14 +789,22 @@ footer li {
         padding: 0;
         border-radius: 0;
     }
-
+    .pop_titre{
+        margin: 5%;
+    }
     .populaires i{
         margin-right: 7%;
     }
 
+    .pop_gallery{
+        margin: 0;
+        padding-bottom: 30px;
+    }
+
     /* Dimension annonces */
     .Hpop{
-        width:85%   ;
+        width:85% ;
+        margin:2% 5% ;
     }
 
     /* Dimension images */
