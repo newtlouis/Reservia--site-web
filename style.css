@@ -290,55 +290,17 @@ header{
 
 }
 /* Dimension images */
-.H_img1{
-    height: 105px;
+.H_img1,.H_img2,.H_img3,.H_img4,.H_img5,.H_img6{
+    height: 8vw;
     width: auto;
-    background-size: cover;
-    background-position: center;
-    background-image: url(/images/hebergements/4_small/1.jpg);
+    object-fit: cover;
+    object-position: center;
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-image: url(/images/hebergements/4_small/1.jpg); */
     border-radius: 15px 15px 0 0;
 }
 
-.H_img2{
-    height: 105px;
-    width: auto;
-    background-size: cover;
-    background-position: center;
-    background-image: url(/images/hebergements/4_small/2.jpg);
-    border-radius: 15px 15px 0 0;
-}
-.H_img3{
-    height: 105px;
-    width: auto;
-    background-size: cover;
-    background-position: center;
-    background-image: url(/images/hebergements/4_small/3.jpg);
-    border-radius: 15px 15px 0 0;
-}
-.H_img4{
-    height: 105px;
-    width: auto;
-    background-size: cover;
-    background-position: center;
-    background-image: url(/images/hebergements/4_small/4.jpg);
-    border-radius: 15px 15px 0 0;
-}
-.H_img5{
-    height: 105px;
-    width: auto;
-    background-size: cover;
-    background-position: center;
-    background-image: url(/images/hebergements/4_small/5.jpg);
-    border-radius: 15px 15px 0 0;
-}
-.H_img6{
-    height: 105px;
-    width: auto;
-    background-size: cover;
-    background-position: center;
-    background-image: url(/images/hebergements/4_small/6.jpg);
-    border-radius: 15px 15px 0 0;
-}
 
 /* indentation du texte sous l'image */
 .H_nom, .H_prix, .etoiles{
@@ -375,13 +337,13 @@ a{
 
 /* Strucure */
 .populaires{
-    width: 45%;
+    width: 40%;
+    min-width: 300px;
     background-color: #e6e6e6  ;
     border-radius: 20px;
     margin: 2% 0 2% 1.5%;
-    padding-bottom: 2%;
+    padding: 0 4% 3% 4%;
 }
-
 /* mise en page titre populaire */
 .titre_populaires{
     display: flex;
@@ -389,15 +351,12 @@ a{
     align-items: center;
     margin: 20px 0 2% 0;
 }
-
 .pop_titre{
-    margin: 10px 0 20PX 30px;
+    margin: 10px 0 20PX 0;
 }
 .titre_populaires i{
     margin-right: 20px;
 }
-
-
 .pop_gallery{
     display: flex;
     flex-direction: column;
@@ -409,39 +368,27 @@ a{
 .Hpop{
     display: flex;
     height:120px ;
-    width: 85%;
-    background-color: #F2F2F2;
-    border-radius: 15px;
+    width: 100%;
+    min-width: 300px;
+
     margin: 3% 0;
     padding: 4px;
+
+    background-color: #F2F2F2;
+    border-radius: 15px;
     box-shadow: 0px 10px 10px rgb(219, 219, 219);
     }
 
 /* Dimension images */
 
-.pop_img1{
+.pop_img1,.pop_img2,.pop_img3{
     width: 135px;
     height:auto;
-    background-image: url(/images/hebergements/4_small/7.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px 0 0 10px;
-}
-
-.pop_img2{
-    width: 195px;
-    height:auto;
-    background-image: url(/images/hebergements/4_small/8.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px 0 0 10px;
-}
-.pop_img3{
-    width: 135px;
-    height:auto;
-    background-image: url(/images/hebergements/4_small/9.jpg);
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
+    object-position: center;
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-image: url(/images/hebergements/4_small/1.jpg); */
     border-radius: 10px 0 0 10px;
 }
 
@@ -534,53 +481,24 @@ a{
 
 /* Dimension des images */
 
-.A_im1{
+.A_im1,.A_im2,.A_im3,.A_im4,.A_im5,.A_im6{
     width: auto;
-    height:400px;
-    background-image: url(/images/activites/4_small/1.jpg);
-    background-size: cover;
-    background-position: center;
+    object-position: center;
+    object-fit: cover;
     border-radius: 20px 20px 0 0;
+}
+
+.A_im1,.A_im4{
+    height:350px;
 }
 .A_im2{
-    width: auto;
-    height:200px;
-    background-image: url(/images/activites/4_small/2.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px 20px 0 0;
+    height:170px;
 }
 .A_im3{
-    width: auto;
-    height:150px;
-    background-image: url(/images/activites/4_small/3.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px 20px 0 0;
+    height:85px;
 }
-.A_im4{
-    width: auto;
-    height:400px;
-    background-image: url(/images/activites/4_small/4.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px 20px 0 0;
-}
-.A_im5{
-    width: auto;
-    height:150px;
-    background-image: url(/images/activites/4_small/5.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px 20px 0 0;
-}
-.A_im6{
-    width: auto;
-    height:150px;
-    background-image: url(/images/activites/4_small/6.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px 20px 0 0;
+.A_im5,.A_im6{
+    height:130px;
 }
 
 
@@ -648,8 +566,17 @@ footer li {
     min-width: 160px;
     }
 
+.H_img1,.H_img2,.H_img3,.H_img4,.H_img5,.H_img6{
+    height: 13vw;
+}
+
 .afficher{
     margin: 6% 0 2% 6%;
+}
+
+/* POPULAIRE */
+.pop_img1,.pop_img2,.pop_img3{
+    width: 115px;
 }
 
 
@@ -856,6 +783,10 @@ footer{
         padding: 0 0 1% 0;
     }
 
+    .H_img1,.H_img2,.H_img3,.H_img4,.H_img5,.H_img6{
+        height: 110px;
+    }
+
     .afficher{
         margin: 5%;
     }
@@ -921,6 +852,12 @@ footer{
 .A2, .A5{
     margin-bottom: 5% ;
 }
+
+/* images activité */
+.A_im1,.A_im2,.A_im3,.A_im4,.A_im5,.A_im6{
+    height:120px;
+}
+
 
 /* FOOTER */
 footer {
