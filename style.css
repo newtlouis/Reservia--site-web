@@ -266,6 +266,7 @@ header{
 }
 
 .HM_titre{
+    font-size: 20px;
     margin-left: 20px;
     margin-top: 10px;
 }
@@ -352,6 +353,7 @@ a{
     margin: 20px 0 2% 0;
 }
 .pop_titre{
+    font-size: 20px;
     margin: 10px 0 20PX 0;
 }
 .titre_populaires i{
@@ -409,6 +411,7 @@ a{
 }
 
 .A_titre{
+    font-size: 20px;
     margin: 15px 0 15px 0;
 }
 
@@ -523,7 +526,7 @@ footer li {
 }
 
 .a_propos{
-    margin: 30px 75px 30px 60px;
+    margin: 30px 10% 30px 5%;
 }
 
 .liste_propos{
@@ -531,7 +534,7 @@ footer li {
 }
 
 .nos_hebergements{
-    margin: 30px 75px 30px 75px;
+    margin: 30px 10% 30px ;
 }
 
 .liste_hebergement{
@@ -539,7 +542,7 @@ footer li {
 }
 
 .assistance{
-    margin: 30px 75px 30px 75px;
+    margin: 30px 10% 30px ;
 }
 
 .liste_assistance{
@@ -601,6 +604,10 @@ footer li {
 footer{
     flex-direction: column;
 }
+.a_propos{
+    margin: 30px 75px 30px 10%;
+}
+
 }
 
 
