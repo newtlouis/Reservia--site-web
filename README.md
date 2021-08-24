@@ -2,6 +2,9 @@
 # RESERVIA - site web
 Intégrer une maquette fournie de manière reponsive
 
+Voir le site: https://newtlouis.github.io/P2_louis_michel/
+
+Voir les commits sur la branche "mobile"
 ## Eléments fournis par l'entreprise Reservia :
 
 La maquette du site Reservia sous différentes résolutions : desktop & mobile.
