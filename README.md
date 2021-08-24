@@ -3,7 +3,7 @@
 
 Intégrer une maquette fournie de manière reponsive
 
-Voir le site: https://newtlouis.github.io/P2_louis_michel/
+Voir le site: https://newtlouis.github.io/Reservia--site-web/
 
 Voir les commits sur la branche "mobile"
 
